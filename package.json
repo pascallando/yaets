@@ -1,0 +1,48 @@
+{
+  "name": "yaets",
+  "version": "0.1.0",
+  "description": "Yet Another Electron Typescript Starter",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ --name=Pacer --tmpdir=false --icon=icon --ignore=\"(.git|.project|src|typings|build/test|gruntfile*|icon*|tsconfig*)\" --prune --overwrite --asar",
+    "test": "mocha -c $(find ./build -name '*Test.js')",
+    "e2e": "mocha -c $(find ./build -name '*TestUI.js')",
+    "testreport": "mocha $(find ./build -name '*Test.js') --reporter mochawesome --reporter-options reportDir=./src/test-reports/"
+  },
+  "repository": "",
+  "keywords": [
+    "electron",
+    "typescript",
+    "riot",
+    "nedb",
+    "mocha",
+    "chai",
+    "spectron"
+  ],
+  "author": "Pascal Lando",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/node": "^6.0.46",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "electron-reload": "^1.0.2",
+    "grunt": "^1.0.1",
+    "grunt-shell-spawn": "^0.3.10",
+    "ipc": "0.0.1",
+    "load-grunt-tasks": "^3.5.2",
+    "mocha": "^3.1.2",
+    "mochawesome": "^1.5.3",
+    "nock": "^8.1.0",
+    "spectron": "^3.4.0"
+  },
+  "dependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.2.0",
+    "electron-prebuilt": "^1.4.6",
+    "nedb": "^1.8.0",
+    "riot": "^2.6.5",
+    "riotcontrol": "0.0.3",
+    "typescript": "^2.0.6"
+  }
+}

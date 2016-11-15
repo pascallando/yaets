@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "rootDir": "./src",
+        "outDir": "./build",
+        "removeComments": true,
+        "module": "commonjs",
+        "sourceMap": true
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./typings/index.d.ts"
+    ],
+    "exclude": [
+        "./node_modules/**/*",
+        "./**/*.spec.ts"
+    ]
+}
