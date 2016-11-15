@@ -10,7 +10,7 @@
 ## Installation
 
 ```shell
-git pull azaz
+git clone https://github.com/pascallando/yaets
 cd yaets
 npm install
 ```
